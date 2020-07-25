@@ -1,0 +1,9 @@
+
+.card {
+    background-color: var(--background-color);
+}
+
+.container {
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+  }

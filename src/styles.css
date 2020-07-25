@@ -1,0 +1,44 @@
+:root{
+    --black-color: #1e1f1c;
+    --background-color: #272822;
+    --foreground-color: #F8F8F2;
+    --comment-color: #75715E;
+    --red-color: #F92672;
+    --orange-color: #FD971F;
+    --light-orange-color: #E69F66;
+    --yellow-color: #E6DB74;
+    --green-color: #A6E22E;
+    --blue-color: #66D9EF;
+    --purple-color: #AE81FF;
+}
+
+body {
+    font-family: 'Cousine', monospace !important;
+    background-color: var(--black-color);
+    color: var(--foreground-color);
+}
+
+label {
+    font-family: 'Cousine', monospace !important;
+}
+
+#content {
+    margin-left: 12%;
+}
+
+.title-color {
+    color: var(--green-color);
+    text-decoration: underline;
+    padding-top: 2%;
+}
+
+.img-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
