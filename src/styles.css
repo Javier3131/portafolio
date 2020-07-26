@@ -1,44 +1,85 @@
-:root{
-    --black-color: #1e1f1c;
-    --background-color: #272822;
-    --foreground-color: #F8F8F2;
-    --comment-color: #75715E;
-    --red-color: #F92672;
-    --orange-color: #FD971F;
-    --light-orange-color: #E69F66;
-    --yellow-color: #E6DB74;
-    --green-color: #A6E22E;
-    --blue-color: #66D9EF;
-    --purple-color: #AE81FF;
+:root {
+  --black-color: #1e1f1c;
+  --background-color: #272822;
+  --foreground-color: #f8f8f2;
+  --comment-color: #75715e;
+  --red-color: #f92672;
+  --orange-color: #fd971f;
+  --light-orange-color: #e69f66;
+  --yellow-color: #e6db74;
+  --green-color: #a6e22e;
+  --blue-color: #66d9ef;
+  --purple-color: #ae81ff;
 }
 
 body {
-    font-family: 'Cousine', monospace !important;
-    background-color: var(--black-color);
-    color: var(--foreground-color);
+  font-family: "Cousine", monospace !important;
+  background-color: var(--black-color);
+  color: var(--foreground-color);
 }
 
 label {
-    font-family: 'Cousine', monospace !important;
+  font-family: "Cousine", monospace !important;
 }
 
-#content {
-    margin-left: 12%;
-}
+/* #content {
+  margin-left: 12%;
+} */
 
 .title-color {
-    color: var(--green-color);
-    text-decoration: underline;
-    padding-top: 2%;
+  color: var(--green-color);
+  text-decoration: underline;
+  padding-top: 2%;
 }
 
 .img-icon {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: var(--black-color) !important;
+}
+
+.nav-link {
+  color: var(--foreground-color) !important;
+}
+
+.navbar-brand {
+  color: var(--foreground-color) !important;
+}
+
+.active a {
+  color: var(--green-color) !important;
+  text-decoration: underline !important;
+}
+
+.navbar-toggler {
+  color: var(--green-color) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--comment-color);
+}
+
+::selection {
+  background: var(--blue-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--blue-color); /* Gecko Browsers */
 }

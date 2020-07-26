@@ -1,4 +1,4 @@
-#sidebar-wrapper {
+/* #sidebar-wrapper {
   z-index: 1;
   position: absolute;
   width: 12%;
@@ -11,7 +11,6 @@
   font-size: 2em;
 }
 
-/* Sidebar styling */
 .sidebar-nav {
   padding: 0;
   list-style: none;
@@ -34,16 +33,11 @@
 }
 
 .sidebar-nav li:hover {
-  background: var(--comment-color);;
+  background: var(--comment-color);
   color: var(--foreground-color);
 }
 
 .sidebar-item {
   font-size: 0.8em;
   margin-top: 10%;
-}
-
-.active {
-  background: var(--comment-color);;
-  color: var(--foreground-color);
-}
+} */
