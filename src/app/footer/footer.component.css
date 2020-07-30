@@ -1,0 +1,12 @@
+a {
+  color: var(--blue-color);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+}
+
