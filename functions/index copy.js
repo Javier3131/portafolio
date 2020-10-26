@@ -1,14 +1,13 @@
 const functions = require('firebase-functions');
-const nodemailer = require('nodemailer');
+
 const express = require('express');
 const cors = require('cors');
+
 const app = express();
+
 app.use(cors({ origin: true }));
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info('Hello logs!', { structuredData: true });
-  response.send('Hello from Firebase!');
-});
+var nodemailer = require('nodemailer');
 
 app.post('/email', (req, res) => {
   // console.log('Hola desde el post email');
@@ -56,4 +55,4 @@ app.post('/email', (req, res) => {
   });
 });
 
-exports.email = functions.https.onRequest(app);
+exports.api = functions.https.onRequest(app);

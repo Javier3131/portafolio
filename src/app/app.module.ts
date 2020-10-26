@@ -10,25 +10,22 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      HomeComponent,
-      SideBarComponent,
-      PortfolioComponent,
-      AboutMeComponent,
-      ContactComponent,
-      HeaderComponent,
-      FooterComponent
-   ],
-   imports: [
-      BrowserModule,
-      AppRoutingModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SideBarComponent,
+    PortfolioComponent,
+    AboutMeComponent,
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
