@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javier Lopez</title>
+    <link>https://javier-lopez.me/fr/</link>
+    <description>Recent content on Javier Lopez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 -0600</lastBuildDate><atom:link href="https://javier-lopez.me/fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales Force Integration</title>
+      <link>https://javier-lopez.me/fr/achievements/salesforce_integration/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/achievements/salesforce_integration/</guid>
+      <description>Le problème Téléchargez la liste des numéros de téléphone à composer qui se trouvaient dans Salesforce vers Connect First. Envoyez et mettez à jour les produits et les prix saisis dans Salesforce dans le numéroteur.
+La solution Développez une page Web chargée de récupérer les informations de Salesforce et de les télécharger dans la base de données du client. Après cela, les informations sont envoyées au composeur Connect First pour être utilisées.</description>
+    </item>
+    
+    <item>
+      <title>Connect First Integration</title>
+      <link>https://javier-lopez.me/fr/achievements/connect_first_integration/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/achievements/connect_first_integration/</guid>
+      <description>Le problème La nécessité d&amp;rsquo;automatiser la génération de rapports et de maintenir à jour les informations de notre base de données vers le numéroteur.
+La solution J&amp;rsquo;étais le développeur chargé de créer un flux de travail afin que les administrateurs du numéroteur puissent gérer les informations du numéroteur avec la base de données du client. Par exemple, lorsqu&amp;rsquo;un nouvel agent est créé sur le système du client, l&amp;rsquo;accès au numéroteur sera également créé.</description>
+    </item>
+    
+    <item>
+      <title>ASP Mobile</title>
+      <link>https://javier-lopez.me/fr/achievements/asp_mobile_app/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/achievements/asp_mobile_app/</guid>
+      <description>Le problème Les clients de la société d&amp;rsquo;eau et d&amp;rsquo;assainissement Aguas de San Pedro ont besoin d&amp;rsquo;un moyen de connaître l&amp;rsquo;état de leurs efforts, le solde actuel de leur compte et de pouvoir envoyer des messages aux bureaux du service client.
+La solution En tant que stagiaire universitaire à Aguas de San Pedro, j&amp;rsquo;ai vu l&amp;rsquo;opportunité de créer une application multiplateforme  afin que les clients puissent consulter les informations de leur compte quand ils le souhaitent.</description>
+    </item>
+    
+    <item>
+      <title>À propos</title>
+      <link>https://javier-lopez.me/fr/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

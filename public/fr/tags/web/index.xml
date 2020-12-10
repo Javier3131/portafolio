@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Javier Lopez</title>
+    <link>https://javier-lopez.me/fr/tags/web/</link>
+    <description>Recent content in web on Javier Lopez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 -0600</lastBuildDate><atom:link href="https://javier-lopez.me/fr/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales Force Integration</title>
+      <link>https://javier-lopez.me/fr/achievements/salesforce_integration/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/achievements/salesforce_integration/</guid>
+      <description>Le problème Téléchargez la liste des numéros de téléphone à composer qui se trouvaient dans Salesforce vers Connect First. Envoyez et mettez à jour les produits et les prix saisis dans Salesforce dans le numéroteur.
+La solution Développez une page Web chargée de récupérer les informations de Salesforce et de les télécharger dans la base de données du client. Après cela, les informations sont envoyées au composeur Connect First pour être utilisées.</description>
+    </item>
+    
+    <item>
+      <title>Connect First Integration</title>
+      <link>https://javier-lopez.me/fr/achievements/connect_first_integration/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/fr/achievements/connect_first_integration/</guid>
+      <description>Le problème La nécessité d&amp;rsquo;automatiser la génération de rapports et de maintenir à jour les informations de notre base de données vers le numéroteur.
+La solution J&amp;rsquo;étais le développeur chargé de créer un flux de travail afin que les administrateurs du numéroteur puissent gérer les informations du numéroteur avec la base de données du client. Par exemple, lorsqu&amp;rsquo;un nouvel agent est créé sur le système du client, l&amp;rsquo;accès au numéroteur sera également créé.</description>
+    </item>
+    
+  </channel>
+</rss>

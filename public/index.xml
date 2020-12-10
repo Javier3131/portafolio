@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javier Lopez</title>
+    <link>https://javier-lopez.me/</link>
+    <description>Recent content on Javier Lopez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 -0600</lastBuildDate><atom:link href="https://javier-lopez.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sales Force Integration</title>
+      <link>https://javier-lopez.me/achievements/salesforce_integration/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/achievements/salesforce_integration/</guid>
+      <description>The Problem Upload the list of phone numbers to dial that were in Salesforce to Connect First. Send and keep the products and prices entered in Salesforce updated in the dialer.
+The Solution Develop a website that is responsible for retrieving information from Salesforce and uploading it to the customer&amp;rsquo;s database. After this, the information is sent to the Connect First dialer to be used.
+Technology Used  ASP .NET C# REST API MSSQL Angular2+ HTML/CSS SASS  </description>
+    </item>
+    
+    <item>
+      <title>Connect First Integration</title>
+      <link>https://javier-lopez.me/achievements/connect_first_integration/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/achievements/connect_first_integration/</guid>
+      <description>The Problem The need to automate the generation of reports and keep the information updated from our database to the dialer.
+The Solution I was the developer in charge of building a workflow so that the dialer administrators could manage the dialer information with the client&amp;rsquo;s database. For example, when a new agent is created on the customer&amp;rsquo;s system, access to the dialer will also be created.
+To keep the information in our reports always updated, I created services so that the dialer could make requests to us with the information of the call and in this way be able to save it in the customer&amp;rsquo;s database.</description>
+    </item>
+    
+    <item>
+      <title>ASP Mobile</title>
+      <link>https://javier-lopez.me/achievements/asp_mobile_app/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0600</pubDate>
+      
+      <guid>https://javier-lopez.me/achievements/asp_mobile_app/</guid>
+      <description>The Problem The clients of the water and sewerage company Aguas de San Pedro need a way to know the status of their efforts, the current balance of their account and to be able to send messages to the customer service offices.
+The Solution As a university intern in Aguas de San Pedro I saw the opportunity to create a cross-platform application  so that clients could consult their account information whenever they wanted.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://javier-lopez.me/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://javier-lopez.me/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
