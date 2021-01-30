@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Utilisation de Puppeteer pour lire les données de table" />
+
+<title>
+	Javier Lopez
+	 - Utilisation de Puppeteer pour lire les données de table 
+</title>
+
+
+
+<link rel="icon" href="/favicon.png">
+
+	
+
+
+
+
+
+<link rel="stylesheet" href="https://javier-lopez.me/css/main.min.de56b55f59841949a4d7197e0d1e8389.css" crossorigin="anonymous" media="screen"
+	integrity="md5-3la1X1mEGUmk1xl+DR6DiQ==">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://javier-lopez.me/css/syntax.min.bb1b567de4651428ffd1a37a1d2bfba6.css" crossorigin="anonymous"
+	integrity="md5-uxtWfeRlFCj/0aN6HSv7pg==" media="screen">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://javier-lopez.me/style/style.min.d41d8cd98f00b204e9800998ecf8427e.css" crossorigin="anonymous" media="screen"
+	integrity="md5-1B2M2Y8AsgTpgAmY7PhCfg==">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://javier-lopez.me/css/main.min.d5d46344e3b621a3e3a173927106f45d.css" crossorigin="anonymous" media="screen"
+	integrity="md5-1dRjROO2IaPjoXOScQb0XQ==">
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://javier-lopez.me/js/pico.min.d41d8cd98f00b204e9800998ecf8427e.js" intergrity="md5-1B2M2Y8AsgTpgAmY7PhCfg==" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="min-h-screen bg-white relative pb-24">
+	<div id="top"></div>
+
+<header class="w-full flex items-center justify-between px-5 mx-auto md:max-w-5xl pt-2 md:pt-0">
+	
+	<div class="flex items-center">
+		<a href="https://javier-lopez.me/fr/" class="inline-block font-bold no-underline select-none">
+			<h1 class="hidden md:block font-charter tracking-normal m-0">
+				Javier Lopez
+			</h1>
+
+			<div class="md:hidden">
+				<div class="w-8 h-8 relative font-bold bg-white blend-diff">
+	<h1 class="absolute-center m-0 font-charter text-gray-100 blend-diff select-none">
+		J
+	</h1>
+</div>
+			</div>
+		</a>
+		
+		<div class="inline-block pl-2 ml-2 border-l border-gray-600">
+			
+			<a href="https://javier-lopez.me/blog/puppeteer_read_table/" class="no-underline inline-block px-1">
+				<span class="font-bold">
+					EN
+				</span>
+			</a>
+			
+		</div>
+		
+	</div>
+
+	<nav class="">
+		
+		<a href="/" class='mx-1 md:mx-2 hover:text-black no-underline'>
+			 Accueil
+		</a>
+		
+		<a href="/blog/" class='mx-1 md:mx-2 hover:text-black no-underline'>
+			 Blog
+		</a>
+		
+		<a href="/achievements/" class='mx-1 md:mx-2 hover:text-black no-underline'>
+			 Réalisations
+		</a>
+		
+		<a href="/#contact" class='mx-1 md:mx-2 hover:text-black no-underline'>
+			 Contact
+		</a>
+		
+	</nav>
+</header>
+	
+
+	<main class="w-full px-4 pt-8 mx-auto md:max-w-4xl overflow-x-hidden md:overflow-visible ">
+<button onclick="window.history.back()"
+	class="bg-transparent border-none font-bold">&larr;Retour</button>
+<h1 class="text-center mx-auto max-w-4xl text-4xl sm:text-5xl md:text-6xl">
+	Utilisation de Puppeteer pour lire les données de table
+</h1>
+
+<h2 class="text-center font-serif font-thin mx-auto mb-16 max-w-4xl text-4xl">
+	Exemple de base sur l&#39;utilisation de Puppeteer pour lire le contenu d&#39;un élément de table.
+</h2>
+
+<div class="text-justify leading-loose mb-12 text-lg">
+	<h2 id="what-is-puppeteerhttpspptrdev">What is 
+
+
+
+
+<a href="https://pptr.dev/" 
+	class="underline "  target="_blank" rel="noopener"
+	>
+	Puppeteer
+</a>?</h2>
+<p>Puppeteer est une bibliothèque de nœuds qui fournit une API de haut niveau pour contrôler Chrome ou Chromium via le 
+
+
+
+
+<a href="https://chromedevtools.github.io/devtools-protocol/" 
+	class="underline "  target="_blank" rel="noopener"
+	>
+	protocole DevTools
+</a>. Le marionnettiste court 
+
+
+
+
+<a href="https://developers.google.com/web/updates/2017/04/headless-chrome" 
+	class="underline "  target="_blank" rel="noopener"
+	>
+	sans tête
+</a> par défaut, mais peut être configuré pour exécuter Chrome ou Chromium complet (sans tête).</p>
+<h2 id="pourquoi-utiliser-puppeteer">Pourquoi utiliser Puppeteer?</h2>
+<p>Imagerie qu&rsquo;il n&rsquo;y a pas d&rsquo;API pour obtenir des données à partir d&rsquo;un site public. En utilisant Puppeteer, vous pouvez rendre le contenu d&rsquo;une page Web et en supprimer des données.</p>
+<p>En outre, Puppeteer propose plusieurs fonctionnalités en plus des données, telles que la génération de captures d&rsquo;écran et de PDF à partir de pages, l&rsquo;automatisation de la soumission de formulaires, les tests d&rsquo;interface utilisateur, la saisie au clavier, etc.</p>
+<p>Un bon exemple de cela serait d&rsquo;obtenir des données liées au COVID-19 à partir d&rsquo;un site Web gouvernemental comme 
+
+
+
+
+<a href="https://covid19honduras.org/" 
+	class="underline "  target="_blank" rel="noopener"
+	>
+	covid19honduras.org
+</a>. Ils ne fournissent pas d&rsquo;API pour récupérer les données.</p>
+<p><img  class="mx-auto my-4"  src="https://raw.githubusercontent.com/Javier3131/datascrapper/main/Screen%20Shot%202021-01-29%20at%209.34.22%20PM.png" alt=""
+	>
+
+</p>
+<h2 id="préparation">Préparation</h2>
+<p>Dans cet exemple, nous allons utiliser NodeJS pour créer une application côté serveur à supprimer 
+
+
+
+
+<a href="https://covid19honduras.org/" 
+	class="underline "  target="_blank" rel="noopener"
+	>
+	covid19honduras.org
+</a> et obtenir spécifiquement les données du tableau des cas confirmés par départements. Si vous allez sur le site et inspectez la table, vous allez voir l&rsquo;identifiant de la table, nous allons utiliser cet identifiant pour obtenir cet élément.</p>
+<ol>
+<li>
+<p>Créer un nouveau projet</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">init</span>
+</code></pre></div></li>
+<li>
+<p>Installez Puppeteer</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">puppeteer</span>
+</code></pre></div></li>
+<li>
+<p>Créez un fichier index.js. Ce sera l&rsquo;endroit où nous allons ajouter le code suivant.</p>
+</li>
+</ol>
+<h2 id="récupérer-les-données-dun-tableau-html">Récupérer les données d&rsquo;un tableau HTML</h2>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">puppeteer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;puppeteer&#39;</span><span class="p">);</span>
+
+<span class="p">(</span><span class="kr">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://covid19honduras.org/&#39;</span><span class="p">;</span>
+
+  <span class="kr">const</span> <span class="nx">browser</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">puppeteer</span><span class="p">.</span><span class="nx">launch</span><span class="p">();</span>
+
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">page</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">browser</span><span class="p">.</span><span class="nx">newPage</span><span class="p">();</span>
+
+    <span class="kr">await</span> <span class="nx">page</span><span class="p">.</span><span class="kr">goto</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+
+    <span class="c1">// Method to create a faster Page
+</span><span class="c1"></span>    <span class="c1">// From: https://github.com/shirshak55/scrapper-tools/blob/master/src/fastPage/index.ts#L113
+</span><span class="c1"></span>    <span class="kr">const</span> <span class="nx">session</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">target</span><span class="p">().</span><span class="nx">createCDPSession</span><span class="p">();</span>
+    <span class="kr">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">setBypassCSP</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="kr">await</span> <span class="nx">session</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Page.enable&#39;</span><span class="p">);</span>
+    <span class="kr">await</span> <span class="nx">session</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Page.setWebLifecycleState&#39;</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">state</span><span class="o">:</span> <span class="s1">&#39;active&#39;</span><span class="p">,</span>
+    <span class="p">});</span>
+
+    <span class="c1">// Bloquea la carga de recursos como imagenes y css
+</span><span class="c1"></span>    <span class="kr">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">setRequestInterception</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+
+    <span class="kr">const</span> <span class="nx">rawData</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[];</span>
+      <span class="kd">let</span> <span class="nx">table</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;tablaDatos&#39;</span><span class="p">);</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">table</span><span class="p">.</span><span class="nx">rows</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">objCells</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">rows</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="nx">i</span><span class="p">).</span><span class="nx">cells</span><span class="p">;</span>
+
+        <span class="kd">let</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">objCells</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">let</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">objCells</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="nx">j</span><span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+          <span class="nx">values</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">values</span> <span class="p">};</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">d</span><span class="p">);</span>
+      <span class="p">}</span>
+
+      <span class="k">return</span> <span class="nx">data</span><span class="p">;</span>
+    <span class="p">});</span>
+
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">rawData</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">})();</span>
+</code></pre></div><h2 id="résultat">Résultat</h2>
+<p><img  class="mx-auto my-4"  src="https://raw.githubusercontent.com/Javier3131/datascrapper/main/Screen%20Shot%202021-01-29%20at%204.07.45%20PM.png" alt=""
+	>
+
+</p>
+
+</div>
+
+
+
+<div class="flex flex-wrap justify-between items-center">
+	
+
+	
+</div>
+
+<hr class="my-6">
+<div class="flex justify-center items-center flex-wrap">
+	
+	<a href="mailto:javierl.1994@gmail.com" title="email"
+		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
+		 >
+		<img src="/icons/email.svg" alt="email icon" class="w-4 h-4 md:w-6 md:h-6">
+	</a>
+	
+	<a href="https://github.com/Javier3131" title="github"
+		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
+		 target="_blank"   rel="noopener" >
+		<img src="/icons/github.svg" alt="github icon" class="w-4 h-4 md:w-6 md:h-6">
+	</a>
+	
+	<a href="https://stackexchange.com/users/7889485/javier-lopez" title="stack-overflow"
+		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
+		 target="_blank"   rel="noopener" >
+		<img src="/icons/stack-overflow.svg" alt="stack-overflow icon" class="w-4 h-4 md:w-6 md:h-6">
+	</a>
+	
+	<a href="https://twitter.com/JavierLopez_HN" title="twitter"
+		class="bg-black rounded-full p-3 mx-2 my-2 transform hover:scale-110 active:scale-90 transition-transform duration-300 ease-in-out"
+		 target="_blank"   rel="noopener" >
+		<img src="/icons/twitter.svg" alt="twitter icon" class="w-4 h-4 md:w-6 md:h-6">
+	</a>
+	
+</div>
+<div class="mt-6"></div>
+
+
+	</main>
+
+	<div class="absolute bottom-0 w-full"><footer class="w-full h-24 text-center text-xs text-gray-400 bg-black relative">
+	<div class="w-full px-6 md:pt-0 md:mx-auto md:max-w-5xl flex flex-1 space-between items-center absolute-center">
+		<a href="https://javier-lopez.me/fr/" class="absolute">
+			<div class="w-8 h-8 relative font-bold bg-white blend-diff">
+	<h1 class="absolute-center m-0 font-charter text-gray-100 blend-diff select-none">
+		J
+	</h1>
+</div>
+		</a>
+
+		
+	</div>
+</footer>
+	</div>
+</body>
+
+</html>
