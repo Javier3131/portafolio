@@ -6,14 +6,14 @@
     <description>Recent content in Blog on Javier Lopez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 -0600</lastBuildDate><atom:link href="https://javier-lopez.me/fr/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://javier-lopez.me/fr/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Utilisation de Puppeteer pour lire les données de table</title>
       <link>https://javier-lopez.me/fr/blog/puppeteer_read_table/</link>
-      <pubDate>Fri, 29 Jan 2021 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://javier-lopez.me/fr/blog/puppeteer_read_table/</guid>
-      <description>What is Puppeteer ? Puppeteer est une bibliothèque de nœuds qui fournit une API de haut niveau pour contrôler Chrome ou Chromium via le protocole DevTools . Le marionnettiste court sans tête  par défaut, mais peut être configuré pour exécuter Chrome ou Chromium complet (sans tête).
+      <description>What is Puppeteer? Puppeteer est une bibliothèque de nœuds qui fournit une API de haut niveau pour contrôler Chrome ou Chromium via le protocole DevTools. Le marionnettiste court sans tête par défaut, mais peut être configuré pour exécuter Chrome ou Chromium complet (sans tête).
 Pourquoi utiliser Puppeteer? Imagerie qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;API pour obtenir des données à partir d&amp;rsquo;un site public. En utilisant Puppeteer, vous pouvez rendre le contenu d&amp;rsquo;une page Web et en supprimer des données.</description>
     </item>
     

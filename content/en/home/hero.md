@@ -20,9 +20,6 @@ hero_media = "/img/profile.jpg"
 	# Primary color
 	primary = true
 
-[[btn]]
-  url = "#contact"
-  label = 'Contact me'
 
 [[btn]]
   url = "https://firebasestorage.googleapis.com/v0/b/portafolio-54c88.appspot.com/o/JAVIER%20LOPEZ%20Resume.pdf?alt=media"

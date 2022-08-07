@@ -30,8 +30,8 @@
 
 
 
-<link rel="stylesheet" href="https://javier-lopez.me/css/syntax.min.bb1b567de4651428ffd1a37a1d2bfba6.css" crossorigin="anonymous"
-	integrity="md5-uxtWfeRlFCj/0aN6HSv7pg==" media="screen">
+<link rel="stylesheet" href="https://javier-lopez.me/css/syntax.min.a381883ed9f1079c185da5f1200cd5a9.css" crossorigin="anonymous"
+	integrity="md5-o4GIPtnxB5wYXaXxIAzVqQ==" media="screen">
 
 
 
@@ -122,10 +122,6 @@
 			 Réalisations
 		</a>
 		
-		<a href="/#contact" class='mx-1 md:mx-2 hover:text-black no-underline'>
-			 Contact
-		</a>
-		
 	</nav>
 </header>
 	
@@ -202,18 +198,18 @@
 <ol>
 <li>
 <p>Créer un nouveau projet</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">init</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">init</span>
 </code></pre></div></li>
 <li>
 <p>Installez Puppeteer</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">puppeteer</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">npm</span> <span class="nx">install</span> <span class="o">--</span><span class="nx">save</span> <span class="nx">puppeteer</span>
 </code></pre></div></li>
 <li>
 <p>Créez un fichier index.js. Ce sera l&rsquo;endroit où nous allons ajouter le code suivant.</p>
 </li>
 </ol>
 <h2 id="récupérer-les-données-dun-tableau-html">Récupérer les données d&rsquo;un tableau HTML</h2>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">puppeteer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;puppeteer&#39;</span><span class="p">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">puppeteer</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;puppeteer&#39;</span><span class="p">);</span>
 
 <span class="p">(</span><span class="kr">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
   <span class="kr">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s1">&#39;https://covid19honduras.org/&#39;</span><span class="p">;</span>

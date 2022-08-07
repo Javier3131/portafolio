@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://javier-lopez.me/blog/</loc>
-    <lastmod>2021-01-29T00:00:00-06:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -15,11 +14,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/</loc>
-    <lastmod>2021-01-29T00:00:00-06:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -30,11 +27,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/tags/</loc>
-    <lastmod>2021-01-29T00:00:00-06:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -45,11 +40,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/blog/puppeteer_read_table/</loc>
-    <lastmod>2021-01-29T00:00:00-06:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -60,11 +53,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/blog/puppeteer_read_table/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/tags/web/</loc>
-    <lastmod>2021-01-29T00:00:00-06:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -75,11 +66,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/tags/web/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/achievements/</loc>
-    <lastmod>2020-03-30T00:00:00-06:00</lastmod>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -90,11 +79,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/achievements/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/achievements/salesforce_integration/</loc>
-    <lastmod>2020-03-30T00:00:00-06:00</lastmod>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -105,11 +92,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/achievements/salesforce_integration/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/achievements/connect_first_integration/</loc>
-    <lastmod>2019-01-30T00:00:00-06:00</lastmod>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -120,11 +105,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/achievements/connect_first_integration/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/achievements/asp_mobile_app/</loc>
-    <lastmod>2017-06-01T00:00:00-06:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -135,11 +118,9 @@
                 hreflang="en"
                 href="https://javier-lopez.me/achievements/asp_mobile_app/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/tags/mobile/</loc>
-    <lastmod>2017-06-01T00:00:00-06:00</lastmod>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -150,9 +131,7 @@
                 hreflang="en"
                 href="https://javier-lopez.me/tags/mobile/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -164,9 +143,7 @@
                 hreflang="en"
                 href="https://javier-lopez.me/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://javier-lopez.me/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -179,5 +156,4 @@
                 href="https://javier-lopez.me/categories/"
                 />
   </url>
-  
 </urlset>

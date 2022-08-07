@@ -6,21 +6,21 @@
     <description>Recent content on Javier Lopez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 -0600</lastBuildDate><atom:link href="https://javier-lopez.me/fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://javier-lopez.me/fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Utilisation de Puppeteer pour lire les données de table</title>
       <link>https://javier-lopez.me/fr/blog/puppeteer_read_table/</link>
-      <pubDate>Fri, 29 Jan 2021 00:00:00 -0600</pubDate>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://javier-lopez.me/fr/blog/puppeteer_read_table/</guid>
-      <description>What is Puppeteer ? Puppeteer est une bibliothèque de nœuds qui fournit une API de haut niveau pour contrôler Chrome ou Chromium via le protocole DevTools . Le marionnettiste court sans tête  par défaut, mais peut être configuré pour exécuter Chrome ou Chromium complet (sans tête).
+      <description>What is Puppeteer? Puppeteer est une bibliothèque de nœuds qui fournit une API de haut niveau pour contrôler Chrome ou Chromium via le protocole DevTools. Le marionnettiste court sans tête par défaut, mais peut être configuré pour exécuter Chrome ou Chromium complet (sans tête).
 Pourquoi utiliser Puppeteer? Imagerie qu&amp;rsquo;il n&amp;rsquo;y a pas d&amp;rsquo;API pour obtenir des données à partir d&amp;rsquo;un site public. En utilisant Puppeteer, vous pouvez rendre le contenu d&amp;rsquo;une page Web et en supprimer des données.</description>
     </item>
     
     <item>
       <title>Sales Force Integration</title>
       <link>https://javier-lopez.me/fr/achievements/salesforce_integration/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 -0600</pubDate>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://javier-lopez.me/fr/achievements/salesforce_integration/</guid>
       <description>Le problème Téléchargez la liste des numéros de téléphone à composer qui se trouvaient dans Salesforce vers Connect First. Envoyez et mettez à jour les produits et les prix saisis dans Salesforce dans le numéroteur.
@@ -30,7 +30,7 @@ La solution Développez une page Web chargée de récupérer les informations de
     <item>
       <title>Connect First Integration</title>
       <link>https://javier-lopez.me/fr/achievements/connect_first_integration/</link>
-      <pubDate>Wed, 30 Jan 2019 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://javier-lopez.me/fr/achievements/connect_first_integration/</guid>
       <description>Le problème La nécessité d&amp;rsquo;automatiser la génération de rapports et de maintenir à jour les informations de notre base de données vers le numéroteur.
@@ -40,11 +40,11 @@ La solution J&amp;rsquo;étais le développeur chargé de créer un flux de trav
     <item>
       <title>ASP Mobile</title>
       <link>https://javier-lopez.me/fr/achievements/asp_mobile_app/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://javier-lopez.me/fr/achievements/asp_mobile_app/</guid>
       <description>Le problème Les clients de la société d&amp;rsquo;eau et d&amp;rsquo;assainissement Aguas de San Pedro ont besoin d&amp;rsquo;un moyen de connaître l&amp;rsquo;état de leurs efforts, le solde actuel de leur compte et de pouvoir envoyer des messages aux bureaux du service client.
-La solution En tant que stagiaire universitaire à Aguas de San Pedro, j&amp;rsquo;ai vu l&amp;rsquo;opportunité de créer une application multiplateforme  afin que les clients puissent consulter les informations de leur compte quand ils le souhaitent.</description>
+La solution En tant que stagiaire universitaire à Aguas de San Pedro, j&amp;rsquo;ai vu l&amp;rsquo;opportunité de créer une application multiplateforme afin que les clients puissent consulter les informations de leur compte quand ils le souhaitent.</description>
     </item>
     
     <item>

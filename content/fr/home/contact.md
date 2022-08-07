@@ -1,4 +1,6 @@
 +++
+hidden = true
+
 widget = "contact_form"
 title = "Me Contacter" 
 
