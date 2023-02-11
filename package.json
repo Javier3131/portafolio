@@ -17,6 +17,6 @@
 		"tailwindcss": "^1.9.6"
 	},
 	"devDependencies": {
-		"npm-check-updates": "^9.2.3"
+		"npm-check-updates": "^16.7.4"
 	}
 }
