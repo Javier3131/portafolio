@@ -1,0 +1,221 @@
+:host {
+  --bg-start: #0b1020;
+  --bg-end: #151d33;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --card-bg: #111827;
+  --card-shadow: rgba(2, 6, 23, 0.6);
+  --intro-color: #93c5fd;
+  --nav-bg: rgba(17, 24, 39, 0.92);
+  --nav-link: #cbd5e1;
+  --nav-link-hover-bg: #38bdf8;
+  --nav-link-hover-text: #0f172a;
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  color: var(--text-main);
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+:host.light-theme {
+  --bg-start: #f8fafc;
+  --bg-end: #eef2ff;
+  --text-main: #1e293b;
+  --text-muted: #475569;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(15, 23, 42, 0.08);
+  --intro-color: #6366f1;
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --nav-link: #334155;
+  --nav-link-hover-bg: #6366f1;
+  --nav-link-hover-text: #ffffff;
+}
+
+.portfolio {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 14px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--nav-link);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  background: var(--nav-link-hover-bg);
+  color: var(--nav-link-hover-text);
+}
+
+.theme-switch {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  padding: 0.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-track {
+  width: 3.35rem;
+  height: 1.8rem;
+  background: color-mix(in srgb, var(--nav-link) 28%, transparent);
+  border: 1px solid color-mix(in srgb, var(--nav-link) 46%, transparent);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.14rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.switch-knob {
+  width: 1.45rem;
+  height: 1.45rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.86rem;
+  background: #ffffff;
+  transform: translateX(1.5rem);
+  transition: transform 0.2s ease;
+}
+
+.theme-switch[aria-checked='false'] .switch-knob {
+  transform: translateX(0);
+}
+
+.theme-switch[aria-checked='false'] .switch-track {
+  background: color-mix(in srgb, var(--nav-link-hover-bg) 35%, transparent);
+}
+
+.theme-switch:focus-visible {
+  outline: 2px solid var(--nav-link-hover-bg);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.section-anchor {
+  scroll-margin-top: 5.8rem;
+}
+
+.hero {
+  text-align: left;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px var(--card-shadow);
+}
+
+.intro {
+  margin: 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--intro-color);
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: 2.4rem;
+}
+
+.role {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+.summary {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 24px var(--card-shadow);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    padding: 2rem 0.75rem;
+  }
+
+  .top-nav {
+    gap: 0.4rem;
+    padding: 0.7rem;
+  }
+
+  .top-nav a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .theme-switch {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero,
+  .card {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}

@@ -1,5 +1,27 @@
 <main class="portfolio">
-  <section class="hero">
+  <nav class="top-nav" aria-label="Section navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <button
+      type="button"
+      class="theme-switch"
+      role="switch"
+      [attr.aria-checked]="isDarkTheme"
+      [attr.aria-label]="isDarkTheme ? 'Switch to light theme' : 'Switch to dark theme'"
+      (click)="toggleTheme()"
+    >
+      <span class="switch-track" aria-hidden="true">
+        <span class="switch-knob">{{ isDarkTheme ? '🌙' : '☀️' }}</span>
+      </span>
+      <span class="sr-only">{{ isDarkTheme ? 'Dark theme enabled' : 'Light theme enabled' }}</span>
+    </button>
+  </nav>
+
+  <section id="about" class="hero section-anchor">
     <p class="intro">Hi, I’m</p>
     <h1>Javier Lopez</h1>
     <p class="role">Software Developer</p>
@@ -14,7 +36,7 @@
     </p>
   </section>
 
-  <section class="card">
+  <section id="skills" class="card section-anchor">
     <h2>Technical Skills</h2>
     <ul>
       <li>
@@ -33,7 +55,7 @@
     </ul>
   </section>
 
-  <section class="card">
+  <section id="experience" class="card section-anchor">
     <h2>Work History</h2>
     <ul>
       <li>
@@ -63,7 +85,7 @@
     </ul>
   </section>
 
-  <section class="card">
+  <section id="projects" class="card section-anchor">
     <h2>Featured Projects</h2>
     <ul>
       <li>
@@ -85,12 +107,12 @@
     </ul>
   </section>
 
-  <section class="card">
+  <section id="education" class="card section-anchor">
     <h2>Education</h2>
     <p>Computer Engineering - CEUTEC College (2012 - 2017)</p>
   </section>
 
-  <section class="card">
+  <section id="contact" class="card section-anchor">
     <h2>Contact</h2>
     <p>Email: javierl.1994&#64;gmail.com</p>
     <p>Phone: (249) 979-0803</p>
