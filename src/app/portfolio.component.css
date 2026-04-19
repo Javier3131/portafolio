@@ -255,6 +255,24 @@ h1 {
   max-width: 70ch;
 }
 
+.resume-download {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--nav-link-hover-text);
+  background: var(--nav-link-hover-bg);
+  border: 1px solid color-mix(in srgb, var(--nav-link-hover-bg) 66%, #ffffff 34%);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.resume-download:hover,
+.resume-download:focus-visible {
+  filter: brightness(1.08);
+}
+
 .card {
   background: var(--card-bg);
   border-radius: 12px;

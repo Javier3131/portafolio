@@ -75,5 +75,8 @@
       "title": "Application cross-platform - Aguas de San Pedro (Juin 2016 - Oct 2016)",
       "description": "A construit une application mobile pour consulter les comptes clients, afficher les projets de l entreprise, fournir les coordonnees et permettre la messagerie au service client."
     }
-  ]
+  ],
+  "resume": {
+    "download": "Telecharger CV"
+  }
 }

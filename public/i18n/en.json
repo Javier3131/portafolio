@@ -75,5 +75,8 @@
       "title": "Cross-Platform Application - Aguas de San Pedro (Jun 2016 - Oct 2016)",
       "description": "Built a mobile app for customer account consultation, company project updates, contact details, and customer service messaging."
     }
-  ]
+  ],
+  "resume": {
+    "download": "Download Resume"
+  }
 }
