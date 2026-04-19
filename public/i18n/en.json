@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "ariaLabel": "Section navigation",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "theme": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme",
+    "darkEnabled": "Dark theme enabled",
+    "lightEnabled": "Light theme enabled"
+  },
+  "hero": {
+    "intro": "Hi, I'm",
+    "role": "Software Developer",
+    "summary1": "Always-learning software developer with 8+ years of progressive experience and a Computer Engineering degree. I build reliable APIs, backend services, and web applications using C#/.NET, Angular, SQL, and modern Agile delivery practices.",
+    "summary2": "Sudbury, ON | (249) 979-0803 | javierl.1994@gmail.com"
+  },
+  "sections": {
+    "technicalSkills": "Technical Skills",
+    "workHistory": "Work History",
+    "featuredProjects": "Featured Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "educationText": "Computer Engineering - CEUTEC College (2012 - 2017)",
+  "contact": {
+    "email": "Email: javierl.1994@gmail.com",
+    "phone": "Phone: (249) 979-0803",
+    "location": "Location: Sudbury, ON",
+    "linkedin": "LinkedIn: linkedin.com/in/javier-alberto-lopez-bonilla-500012ba/"
+  },
+  "skills": [
+    "C#, ASP.NET, .NET 5.0, .NET MVC 5, .NET Core, REST Web API, Entity Framework",
+    "Angular 2+, JavaScript (ECMAScript 6), jQuery, Bootstrap, HTML, CSS, SCSS, Ionic",
+    "MS SQL Server, stored procedures, triggers",
+    "Salesforce API, RingCentral / Connect First integrations",
+    "Azure serverless services, Firebase, GitHub, GitHub Copilot",
+    "Playwright, unit testing, integration testing, Kibana",
+    "Agile methodologies: Scrum and Kanban"
+  ],
+  "workHistory": [
+    {
+      "title": ".NET Software Engineer - Telus Agriculture, Canada (May 2022 - Present)",
+      "description": "Build serverless services in C#/.NET Core on Azure, develop and maintain APIs, support legacy apps, implement testing, and deliver Angular-based web features."
+    },
+    {
+      "title": "Web Developer - Zero Variance, San Pedro Sula, Honduras (Nov 2018 - May 2022)",
+      "description": "Built backend services and responsive web pages with C#/.NET, Angular, and SQL; integrated Salesforce and RingCentral; performed troubleshooting and pre-release testing."
+    },
+    {
+      "title": "Freelance Software Developer - Number8 / SkuVault, Louisville, Kentucky (Jul 2021 - Mar 2022)",
+      "description": "Developed .NET Core APIs and backend systems, maintained e-commerce integrations, created NuGet packages, and used Kibana for issue analysis."
+    },
+    {
+      "title": "Software Developer - Aguas de San Pedro, San Pedro Sula, Honduras (Nov 2015 - Nov 2018)",
+      "description": "Developed software modules, executed integration/functionality testing, and maintained lifecycle-aligned documentation for technical and end-user support."
+    }
+  ],
+  "projects": [
+    {
+      "title": "API Integrations - Zero Variance (Jan 2020 - Jun 2020)",
+      "description": "Developed a REST API between RingCentral Dialer and Salesforce to fetch product data and persist call details in SQL. Also delivered admin pages to manage agents. Owned architecture, development, QA, and DevOps."
+    },
+    {
+      "title": "Customer Dialer Access - Zero Variance (Nov 2018 - Apr 2019)",
+      "description": "Built workflows to synchronize dialer access with client systems and services to store call/reporting data in customer databases."
+    },
+    {
+      "title": "Cross-Platform Application - Aguas de San Pedro (Jun 2016 - Oct 2016)",
+      "description": "Built a mobile app for customer account consultation, company project updates, contact details, and customer service messaging."
+    }
+  ],
+  "resume": {
+    "download": "Download Resume"
+  }
+}
