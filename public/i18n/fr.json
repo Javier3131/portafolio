@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "ariaLabel": "Navigation des sections",
+    "about": "Profil",
+    "skills": "Competences",
+    "experience": "Experience",
+    "projects": "Projets",
+    "education": "Formation",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "theme": {
+    "switchToLight": "Passer au theme clair",
+    "switchToDark": "Passer au theme sombre",
+    "darkEnabled": "Theme sombre active",
+    "lightEnabled": "Theme clair active"
+  },
+  "hero": {
+    "intro": "Bonjour, je suis",
+    "role": "Developpeur logiciel",
+    "summary1": "Developpeur logiciel en apprentissage continu avec plus de 8 ans d experience progressive et un diplome en genie informatique. Je construis des API fiables, des services backend et des applications web avec C#/.NET, Angular, SQL et des pratiques Agile modernes.",
+    "summary2": "Sudbury, ON | (249) 979-0803 | javierl.1994@gmail.com"
+  },
+  "sections": {
+    "technicalSkills": "Competences techniques",
+    "workHistory": "Parcours professionnel",
+    "featuredProjects": "Projets vedettes",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "educationText": "Genie informatique - CEUTEC College (2012 - 2017)",
+  "contact": {
+    "email": "Courriel: javierl.1994@gmail.com",
+    "phone": "Telephone: (249) 979-0803",
+    "location": "Localisation: Sudbury, ON",
+    "linkedin": "LinkedIn: linkedin.com/in/javier-alberto-lopez-bonilla-500012ba/"
+  },
+  "skills": [
+    "C#, ASP.NET, .NET 5.0, .NET MVC 5, .NET Core, REST Web API, Entity Framework",
+    "Angular 2+, JavaScript (ECMAScript 6), jQuery, Bootstrap, HTML, CSS, SCSS, Ionic",
+    "MS SQL Server, procedures stockees, triggers",
+    "Salesforce API, integrations RingCentral / Connect First",
+    "Services serverless Azure, Firebase, GitHub, GitHub Copilot",
+    "Playwright, tests unitaires, tests d integration, Kibana",
+    "Methodologies Agile: Scrum et Kanban"
+  ],
+  "workHistory": [
+    {
+      "title": "Ingenieur logiciel .NET - Telus Agriculture, Canada (Mai 2022 - Present)",
+      "description": "Developpe des services serverless en C#/.NET Core sur Azure, cree et maintient des API, prend en charge des applications legacy, implemente des tests et livre des fonctionnalites web avec Angular."
+    },
+    {
+      "title": "Developpeur web - Zero Variance, San Pedro Sula, Honduras (Nov 2018 - Mai 2022)",
+      "description": "A developpe des services backend et des pages web responsives avec C#/.NET, Angular et SQL; a integre Salesforce et RingCentral; a effectue le depannage et les tests avant mise en production."
+    },
+    {
+      "title": "Developpeur logiciel freelance - Number8 / SkuVault, Louisville, Kentucky (Juil 2021 - Mars 2022)",
+      "description": "A developpe des API .NET Core et des systemes backend, maintenu des integrations e-commerce, cree des packages NuGet et utilise Kibana pour l analyse des incidents."
+    },
+    {
+      "title": "Developpeur logiciel - Aguas de San Pedro, San Pedro Sula, Honduras (Nov 2015 - Nov 2018)",
+      "description": "A developpe des modules logiciels, execute des tests d integration/fonctionnalite et maintenu une documentation alignee au cycle de vie pour le support technique et utilisateur."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Integrations API - Zero Variance (Jan 2020 - Juin 2020)",
+      "description": "A developpe une API REST entre RingCentral Dialer et Salesforce pour recuperer les donnees produits et enregistrer les details d appel dans SQL. A egalement livre des pages d administration pour gerer les agents. Responsable de l architecture, du developpement, de la QA et du DevOps."
+    },
+    {
+      "title": "Customer Dialer Access - Zero Variance (Nov 2018 - Avr 2019)",
+      "description": "A construit des workflows pour synchroniser les acces du dialer avec les systemes clients et des services pour stocker les donnees d appel/rapports dans les bases clients."
+    },
+    {
+      "title": "Application cross-platform - Aguas de San Pedro (Juin 2016 - Oct 2016)",
+      "description": "A construit une application mobile pour consulter les comptes clients, afficher les projets de l entreprise, fournir les coordonnees et permettre la messagerie au service client."
+    }
+  ]
+}
