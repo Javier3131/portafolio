@@ -17,8 +17,8 @@
   },
   "hero": {
     "intro": "Hi, I'm",
-    "role": "Software Developer",
-    "summary1": "Always-learning software developer with 8+ years of progressive experience and a Computer Engineering degree. I build reliable APIs, backend services, and web applications using C#/.NET, Angular, SQL, and modern Agile delivery practices.",
+    "role": "Software Engineer",
+    "summary1": "Results-driven Software Engineer with 8+ years of hands-on experience and a B.Sc. in Computer Engineering. Specializes in designing scalable APIs, cloud-based backend services, and full-stack web applications using C#/.NET, Angular, and SQL — delivered within Agile/Scrum frameworks.",
     "summary2": "Sudbury, ON | (249) 979-0803 | javierl.1994@gmail.com"
   },
   "sections": {
@@ -28,7 +28,7 @@
     "education": "Education",
     "contact": "Contact"
   },
-  "educationText": "Computer Engineering - CEUTEC College (2012 - 2017)",
+  "educationText": "B.Sc. Computer Engineering — CEUTEC College (2012 – 2017)",
   "contact": {
     "email": "Email: javierl.1994@gmail.com",
     "phone": "Phone: (249) 979-0803",
@@ -36,44 +36,44 @@
     "linkedin": "LinkedIn: linkedin.com/in/javier-alberto-lopez-bonilla-500012ba/"
   },
   "skills": [
-    "C#, ASP.NET, .NET 5.0, .NET MVC 5, .NET Core, REST Web API, Entity Framework",
-    "Angular 2+, JavaScript (ECMAScript 6), jQuery, Bootstrap, HTML, CSS, SCSS, Ionic",
-    "MS SQL Server, stored procedures, triggers",
+    "C#, ASP.NET, .NET 5/6, .NET MVC 5, .NET Core, RESTful Web API, Entity Framework",
+    "Angular 2+, TypeScript, JavaScript (ES6+), jQuery, Bootstrap, HTML5, CSS3, SCSS, Ionic",
+    "MS SQL Server, stored procedures, triggers, query optimization",
     "Salesforce API, RingCentral / Connect First integrations",
-    "Azure serverless services, Firebase, GitHub, GitHub Copilot",
-    "Playwright, unit testing, integration testing, Kibana",
-    "Agile methodologies: Scrum and Kanban"
+    "Azure serverless (Functions, Service Bus), Firebase, Git, GitHub, GitHub Copilot",
+    "Playwright, unit testing, integration testing, Kibana log analysis",
+    "Agile methodologies: Scrum, Kanban"
   ],
   "workHistory": [
     {
-      "title": ".NET Software Engineer - Telus Agriculture, Canada (May 2022 - Present)",
-      "description": "Build serverless services in C#/.NET Core on Azure, develop and maintain APIs, support legacy apps, implement testing, and deliver Angular-based web features."
+      "title": ".NET Software Engineer — Telus Agriculture, Canada (May 2022 – Present)",
+      "description": "Architect and maintain Azure-hosted serverless microservices in C#/.NET Core; design and evolve RESTful APIs; modernize legacy systems; drive test coverage through unit and integration testing; and ship end-to-end Angular UI features."
     },
     {
-      "title": "Web Developer - Zero Variance, San Pedro Sula, Honduras (Nov 2018 - May 2022)",
-      "description": "Built backend services and responsive web pages with C#/.NET, Angular, and SQL; integrated Salesforce and RingCentral; performed troubleshooting and pre-release testing."
+      "title": "Web Developer — Zero Variance, San Pedro Sula, Honduras (Nov 2018 – May 2022)",
+      "description": "Engineered backend services and responsive UIs using C#/.NET, Angular, and MS SQL Server; integrated third-party platforms (Salesforce, RingCentral); conducted root-cause analysis and pre-release regression testing."
     },
     {
-      "title": "Freelance Software Developer - Number8 / SkuVault, Louisville, Kentucky (Jul 2021 - Mar 2022)",
-      "description": "Developed .NET Core APIs and backend systems, maintained e-commerce integrations, created NuGet packages, and used Kibana for issue analysis."
+      "title": "Freelance Software Developer — Number8 / SkuVault, Louisville, KY (Jul 2021 – Mar 2022)",
+      "description": "Designed and shipped .NET Core REST APIs for e-commerce workflows; authored reusable NuGet packages; maintained third-party integrations; leveraged Kibana dashboards for log analysis and incident triage."
     },
     {
-      "title": "Software Developer - Aguas de San Pedro, San Pedro Sula, Honduras (Nov 2015 - Nov 2018)",
-      "description": "Developed software modules, executed integration/functionality testing, and maintained lifecycle-aligned documentation for technical and end-user support."
+      "title": "Software Developer — Aguas de San Pedro, San Pedro Sula, Honduras (Nov 2015 – Nov 2018)",
+      "description": "Delivered full-lifecycle software modules from requirements through deployment; executed functional and integration test plans; authored technical specifications and end-user documentation."
     }
   ],
   "projects": [
     {
-      "title": "API Integrations - Zero Variance (Jan 2020 - Jun 2020)",
-      "description": "Developed a REST API between RingCentral Dialer and Salesforce to fetch product data and persist call details in SQL. Also delivered admin pages to manage agents. Owned architecture, development, QA, and DevOps."
+      "title": "API Integration Platform — Zero Variance (Jan 2020 – Jun 2020)",
+      "description": "Designed and implemented a RESTful integration layer bridging RingCentral Dialer and Salesforce CRM to retrieve product data and persist call records in SQL Server. Delivered an agent-management admin portal and held end-to-end ownership spanning architecture, development, QA, and CI/CD pipeline setup."
     },
     {
-      "title": "Customer Dialer Access - Zero Variance (Nov 2018 - Apr 2019)",
-      "description": "Built workflows to synchronize dialer access with client systems and services to store call/reporting data in customer databases."
+      "title": "Customer Dialer Access — Zero Variance (Nov 2018 – Apr 2019)",
+      "description": "Engineered automated workflows to synchronize dialer agent access with client systems and developed data-persistence services to capture call and reporting metrics in customer databases."
     },
     {
-      "title": "Cross-Platform Application - Aguas de San Pedro (Jun 2016 - Oct 2016)",
-      "description": "Built a mobile app for customer account consultation, company project updates, contact details, and customer service messaging."
+      "title": "Cross-Platform Mobile Application — Aguas de San Pedro (Jun 2016 – Oct 2016)",
+      "description": "Developed a cross-platform mobile application enabling customers to view account details, track company project updates, access contact information, and submit service requests."
     }
   ],
   "resume": {
