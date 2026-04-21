@@ -1,11 +1,15 @@
 <main class="portfolio">
   <nav class="top-nav" [attr.aria-label]="'nav.ariaLabel' | translate">
-    <a href="#about">{{ 'nav.about' | translate }}</a>
-    <a href="#skills">{{ 'nav.skills' | translate }}</a>
-    <a href="#experience">{{ 'nav.experience' | translate }}</a>
-    <a href="#projects">{{ 'nav.projects' | translate }}</a>
-    <a href="#education">{{ 'nav.education' | translate }}</a>
-    <a href="#contact">{{ 'nav.contact' | translate }}</a>
+    <a href="#about" class="nav-brand" aria-label="Javier Lopez – home">JL</a>
+
+    <div class="nav-links">
+      <a href="#about">{{ 'nav.about' | translate }}</a>
+      <a href="#skills">{{ 'nav.skills' | translate }}</a>
+      <a href="#experience">{{ 'nav.experience' | translate }}</a>
+      <a href="#projects">{{ 'nav.projects' | translate }}</a>
+      <a href="#education">{{ 'nav.education' | translate }}</a>
+      <a href="#contact">{{ 'nav.contact' | translate }}</a>
+    </div>
 
     <div class="nav-controls">
       <div class="lang-switch" role="group" [attr.aria-label]="'nav.language' | translate">
@@ -44,39 +48,63 @@
   </nav>
 
   <section id="about" class="hero section-anchor">
-    <p class="intro">{{ 'hero.intro' | translate }}</p>
-    <h1>Javier Lopez</h1>
-    <p class="role">{{ 'hero.role' | translate }}</p>
-    <p class="summary">{{ 'hero.summary1' | translate }}</p>
-    <p class="summary">{{ 'hero.summary2' | translate }}</p>
-    <a class="resume-download" href="/Javier%20Lopez%20-%20Resume.pdf" download="Javier Lopez - Resume.pdf">
-      {{ 'resume.download' | translate }}
-    </a>
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <img class="avatar-photo" src="/avatar.jpg" alt="Javier Lopez" *ngIf="!avatarMissing" (error)="avatarMissing = true">
+        <div class="avatar-initials" *ngIf="avatarMissing">JL</div>
+      </div>
+      <div class="hero-text">
+        <p class="intro">{{ 'hero.intro' | translate }}</p>
+        <h1>Javier Lopez</h1>
+        <p class="role">{{ displayedRole }}<span class="cursor">|</span></p>
+        <p class="summary">{{ 'hero.summary1' | translate }}</p>
+        <p class="summary">{{ 'hero.summary2' | translate }}</p>
+        <a class="resume-download" href="/Javier%20Lopez%20-%20Resume.pdf" download="Javier Lopez - Resume.pdf">
+          {{ 'resume.download' | translate }}
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="skills" class="card section-anchor">
     <h2>{{ 'sections.technicalSkills' | translate }}</h2>
-    <ul>
-      <li *ngFor="let skill of skills">{{ skill }}</li>
-    </ul>
+    <div class="skill-chips">
+      <span class="chip" *ngFor="let chip of skillChips">{{ chip }}</span>
+    </div>
   </section>
 
   <section id="experience" class="card section-anchor">
     <h2>{{ 'sections.workHistory' | translate }}</h2>
-    <ul>
-      <li *ngFor="let role of workHistory">
-        <strong>{{ role.title }}</strong>: {{ role.description }}
-      </li>
-    </ul>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let item of workTimeline">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-role">{{ item.role }}</span>
+            <span class="timeline-dates">{{ item.dates }}</span>
+          </div>
+          <div class="timeline-company">{{ item.company }}</div>
+          <p class="timeline-desc">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="card section-anchor">
     <h2>{{ 'sections.featuredProjects' | translate }}</h2>
-    <ul>
-      <li *ngFor="let project of projects">
-        <strong>{{ project.title }}</strong>: {{ project.description }}
-      </li>
-    </ul>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let item of projectTimeline">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-role">{{ item.role }}</span>
+            <span class="timeline-dates">{{ item.dates }}</span>
+          </div>
+          <div class="timeline-company">{{ item.company }}</div>
+          <p class="timeline-desc">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="education" class="card section-anchor">
@@ -86,9 +114,35 @@
 
   <section id="contact" class="card section-anchor">
     <h2>{{ 'sections.contact' | translate }}</h2>
-    <p>{{ 'contact.email' | translate }}</p>
-    <p>{{ 'contact.phone' | translate }}</p>
-    <p>{{ 'contact.location' | translate }}</p>
-    <p>{{ 'contact.linkedin' | translate }}</p>
+    <ul class="contact-list">
+      <li>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <a href="mailto:javierl.1994@gmail.com">javierl.1994@gmail.com</a>
+      </li>
+      <li>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <a href="tel:+12499790803">(249) 979-0803</a>
+      </li>
+      <li>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <span>Sudbury, ON</span>
+      </li>
+      <li>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+        <a href="https://linkedin.com/in/javier-alberto-lopez-bonilla-500012ba/" target="_blank" rel="noopener noreferrer">linkedin.com/in/javier-alberto-lopez-bonilla-500012ba/</a>
+      </li>
+    </ul>
   </section>
 </main>
